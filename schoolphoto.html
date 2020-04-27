@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>学校图片</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/public.js"></script>
+	<script src="js/swiper-3.4.2.min.js"></script>
+	<script src="js/echarts.min.js"></script>
+	<link rel="stylesheet" href="layui/css/layui.css">
+	<script src="layui/layui.js"></script>
+	<script type="text/javascript" src="js/prefixfree.min.js"></script>
+	<script type="text/javascript" src="js/zoom-slideshow.js"></script>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+</head>
+<body>
+	<!-- 公共顶部  A-->
+	<div class="m-header">
+	    <div class="header-main c">
+	        <div class="header-main-left fl">
+	            <div class="shou-d f14">
+	                <i><img src="images/ico_1.png" alt=""></i>
+	                <span>关注公众号</span>
+	            </div>
+	            <div class="hide-e">
+	                <div class="hide-e-main f14">
+	                    <i><img src="images/ico_34.png" alt=""></i>
+	                    <p>
+	                        <img src="images/public_ico.png" alt="">
+	                    </p>
+	                    <span>扫码关注公众号</span>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="header-main-right fr f14">
+	            <i><img src="images/ico_2.png" alt=""></i>
+	            <span>咨询热线：400-8836-133</span>
+	        </div>
+	    </div>
+	</div>
+	<!-- 二级头部导航 -->
+	<div class="m-navigationbox">
+		<div class="m-navigation c">
+			<a href="index.html" target="_blank" class="logo"><img src="images/logo.png" alt=""></a>
+			<div class="ul c">
+				<a href="index.html" target="_blank"><i></i><p>首页</p></a>
+				<a href="list.html" target="_blank" class="on"><i></i><p>精选学校</p></a>
+				<a href="cebu.html" target="_blank"><i></i><p>宿务名校</p></a>
+				<a href="yxlist.html" target="_blank"><i></i><p>游学资讯</p></a>
+				<a href="consultation.html" target="_blank"><i></i><p>学生反馈</p></a>
+				<a href="consultation.html" target="_blank"><i></i><p>咨询我们</p></a>
+			</div>
+		</div>
+	</div>
+	<!-- 面包屑导航 -->
+	<div class="m-puicnav-top">
+		<a href="index.html">首页</a> &gt;
+		<a href="list.html">学校大全</a> &gt;
+		<a href="javascript:void(0)">Cpils</a>
+	</div>
+	<!-- 楼盘信息 -->
+	<div class="m-lpdatabox c">
+		<!-- 轮播图 -->
+		<div class="m-sidechild">
+			<div class="header">
+				<div class="htmleaf-content">
+							<div id="zoom"></div>
+							<div id="wrapper">
+								<div id="content">
+									<div id="view" style="margin-left: 10%">
+										<img src="images/nature1.jpg" alt="" style="display: inline;">
+									</div>
+									<div id="thumbs">
+										<!-- <div id="nav-left-thumbs"></div> -->
+										<div id="pics-thumbs">
+											<img src="images/nature2.jpg" alt="Nature2" />
+											<img src="images/nature1.jpg" alt="Nature3" />
+											<img src="images/nature4.jpg" alt="Nature4" />
+											<img src="images/nature5.jpg" alt="Nature5" />
+										</div>
+										<!-- <div id="nav-right-thumbs">></div> -->
+									</div>
+								</div>
+							</div>
+						</div>
+
+			</div>
+		</div>
+		<div class="m-echarts">
+			<div class="m-echartsbox">
+				<div class="content"><em>cpils</em>（Cebu Pacific International Language School)</div>
+				<div class="list-text">平均学费：<em>9200</em>元/月 <i>地区：菲律宾/宿务</i></div>
+				<div class="button">
+					<div class="k-button"><button><a href="#">免费咨询报名</a></button></div>
+					<div class="h-button"><button><a href="#">领取游学方案</a></button></div>
+				</div>
+				<div class="m-fs">
+					<div class="fs-content">
+						<div class="list-pf"><p>评分: <i>4.7</i>分</p></div>
+						<div class="m-layui">
+							<div class="m-layui-l">教学师资</div>
+						<div class="limitWidth"><div class="layui-progress layui-progress-big" lay-showPercent="yes"><div class="layui-progress-bar layui-bg-orange" lay-percent="40%"></div></div></div>
+						</div>
+						<div class="m-layui">
+							<div class="m-layui-l">课外活动</div>
+						<div class="limitWidth"><div class="layui-progress layui-progress-big" lay-showPercent="yes"><div class="layui-progress-bar layui-bg-orange" lay-percent="80%"></div></div></div>
+						</div>
+						<div class="m-layui">
+							<div class="m-layui-l">生活便利</div>
+						<div class="limitWidth"><div class="layui-progress layui-progress-big" lay-showPercent="yes"><div class="layui-progress-bar layui-bg-orange" lay-percent="60%"></div></div></div>
+						</div>
+						<div class="m-layui">
+							<div class="m-layui-l">住宿环境</div>
+						<div class="limitWidth"><div class="layui-progress layui-progress-big" lay-showPercent="yes"><div class="layui-progress-bar layui-bg-orange" lay-percent="50%"></div></div></div>
+						</div>
+						<div class="m-layui">
+							<div class="m-layui-l">学校设备</div>
+						<div class="limitWidth"><div class="layui-progress layui-progress-big" lay-showPercent="yes"><div class="layui-progress-bar layui-bg-orange" lay-percent="45%"></div></div></div>
+						</div>
+						</div>
+						<script>
+							layui.use("element",function(){
+								var element = layui.element;
+								
+							});
+						</script>
+					<div class="e-cherts">
+						<div id="mineFirst" style="height:250px;width:100%"></div>
+						
+					</div>
+					
+				</div>
+			</div>
+			<script>
+			/* 1，声明使用的容器 */
+			var dom = document.getElementById("mineFirst");
+			   /* 2，初始化图形 */
+			var myChart = echarts.init(dom);
+			var app = {};
+			option = null;
+			/* 3，图形绘制的选项配置 */
+			option = {
+				title: {
+					text: '人口比例',
+					left: 'left'
+				},
+				tooltip: {
+					trigger: 'item',
+					formatter: '{b}'
+				},
+			   legend: {
+					left: 'left',
+					top: 'bottom',
+					data: [ '日本15%', '韩国20%', '台湾25%', '中国30%', '其他10%(俄罗斯，越南，泰国)'],
+					textStyle:{
+						fontSize:9
+					}
+				},
+				toolbox: {
+					show: true,
+					feature: {
+						mark: {show: true},
+						dataView: {show: true, readOnly: false},
+						magicType: {
+							show: true,
+							type: ['pie', 'funnel']
+						},
+						restore: {show: true},
+						saveAsImage: {show: true}
+					}
+				},
+				series: [
+					{
+						name: '半径模式',
+						type: 'pie',
+						radius: [15, 75],
+						center: ['30%', '45%'],
+						roseType: 'radius',
+						label: {
+							show: false
+						},
+						emphasis: {
+							label: {
+								show: false
+							}
+						},
+						data: [
+							{value: 15, name: '日本15%'},
+							{value: 20, name: '韩国20%'},
+							{value: 25, name: '台湾25%'},
+							{value: 30, name: '中国30%'},
+							{value: 10, name: '其他10%(俄罗斯，越南，泰国)'}
+						]
+					},
+				]
+			};
+			if (option && typeof option === "object") {
+			    myChart.setOption(option, true);
+			}
+			</script>
+		</div>
+	</div>
+	<!-- 内容列表 -->
+	<div class="m-schoolCurriculum">
+	       <div class="m-schoolCurriculum_main">
+			   <div class="switch c">
+			               <span><a href="schooldList.html" >学校详情</a></span>
+			               <span><a href="list.html">课程/住宿</a></span>
+			               <span class="on"><a href="schoolphoto.html" style="color: #fff;">学校图集</a></span>
+			    </div>
+				<!-- 学校图集 -->
+				<div class="detailsbox-main">
+					<div class="x-photo"><em>学校照片</em>
+					<ul class="c">
+						<li><img src="images/b.jpg" alt=""></li>
+						<li><img src="images/b.jpg" alt=""></li>
+						<li><img src="images/b.jpg" alt=""></li>
+						<li><img src="images/b.jpg" alt=""></li>
+						<li><img src="images/b.jpg" alt=""></li>
+						<li><img src="images/b.jpg" alt=""></li>
+						<li><img src="images/b.jpg" alt=""></li>
+						<li><img src="images/b.jpg" alt=""></li>
+					</ul>
+					</div>
+					<div class="x-photo">
+						<em>宿舍照片</em>
+						<ul class="c">
+							<li><img src="images/s2.png" alt=""></li>
+							<li><img src="images/s2.png" alt=""></li>
+							<li><img src="images/s2.png" alt=""></li>
+							<li><img src="images/s2.png" alt=""></li>
+						</ul>
+					</div>
+					<div class="x-photo">
+						<em>周边环境</em>
+						<ul class="c">
+							<li><img src="images/1.jpg" alt=""></li>
+							<li><img src="images/1.jpg" alt=""></li>
+							<li><img src="images/1.jpg" alt=""></li>
+							<li><img src="images/1.jpg" alt=""></li>
+						</ul>
+					</div>
+					<div class="x-photo">
+						<em>学生上传</em>
+						<ul class="c">
+							<li><img src="images/a.jpg" alt=""></li>
+							<li><img src="images/a.jpg" alt=""></li>
+							<li><img src="images/a.jpg" alt=""></li>
+							<li><img src="images/a.jpg" alt=""></li>
+							<li><img src="images/a.jpg" alt=""></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+	</div>
+	<!-- 热门学校 -->
+	<div class="indexHotSchool">
+		<div class="indexHotSchool-box">
+			<div class="m-content">
+				<em>推荐热门学校</em>
+				<a href="javascript:void(0)">查看更多 >></a>
+			</div>
+			<div class="HotSchoold-list mt60">
+				<div class="list-main">
+					<ul class="c">
+						<li>
+							<div class="sort-ico"><span>No.1</span></div>
+							<div class="li-main">
+								<div class="m-li-main-top"><a href="#"><img src="images/a.jpg" alt=""></a></div>
+								<div class="li-main-text">
+									<div class="title-maun c">
+										<p class="title-l"><a href="#">Cebu Pacific International Language School</a></p>
+										<p class="pric-r"><span><em>9800</em>元/月</span></p>
+									</div>
+									<div class="pinf c">
+										<div class="pinf-l c">
+											<p class="ico">
+												<i><img src="images/ico_8_1.png" alt=""></i>
+												<i><img src="images/ico_8_1.png" alt=""></i>
+												<i><img src="images/ico_8_1.png" alt=""></i>
+												<i><img src="images/ico_8_1.png" alt=""></i>
+												<i><img src="images/ico_8_2.png" alt=""></i>
+											</p>
+											<p class="fen">4.8 <em>分</em></p>
+										</div>
+										<div class="r-city">
+											<i><img src="images/ico_4.png" alt=""></i>
+											<span>菲律宾 / 宿务</span>
+										</div>
+									</div>
+									<div class="lable c">
+										<i>商用课程</i>
+										<i>斯巴达课程</i>
+										<i>一对一指导</i>
+										<i>雅思</i>
+										<i>秘籍斯巴达课程</i>
+										<i>商务英语</i>
+										<i>一般英语</i>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="sort-ico"><span>No.2</span></div>
+							<div class="li-main">
+								<div class="m-li-main-top"><a href="#"><img src="images/b.jpg" alt=""></a></div>
+								<div class="li-main-text">
+									<div class="title-maun c">
+										<p class="title-l"><a href="#">IDEA (Cebu校区)</a></p>
+										<p class="pric-r"><span><em>9800</em>元/月</span></p>
+									</div>
+									<div class="pinf c">
+										<div class="pinf-l c">
+											<p class="ico">
+												<i><img src="images/ico_8_1.png" alt=""></i>
+												<i><img src="images/ico_8_1.png" alt=""></i>
+												<i><img src="images/ico_8_1.png" alt=""></i>
+												<i><img src="images/ico_8_1.png" alt=""></i>
+												<i><img src="images/ico_8_2.png" alt=""></i>
+											</p>
+											<p class="fen">4.8 <em>分</em></p>
+										</div>
+										<div class="r-city">
+											<i><img src="images/ico_4.png" alt=""></i>
+											<span>菲律宾 / 宿务</span>
+										</div>
+									</div>
+									<div class="lable c">
+										<i>商用课程</i>
+										<i>斯巴达课程</i>
+										<i>一对一指导</i>
+										<i>雅思</i>
+										<i>秘籍斯巴达课程</i>
+										<i>商务英语</i>
+										<i>一般英语</i>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="sort-ico"><span>No.3</span></div>
+							<div class="li-main">
+								<div class="m-li-main-top"><a href="#"><img src="images/f.jpg" alt=""></a></div>
+								<div class="li-main-text">
+									<div class="title-maun c">
+										<p class="title-l"><a href="#">IDEA (Cebu校区)</a></p>
+										<p class="pric-r"><span><em>9800</em>元/月</span></p>
+									</div>
+									<div class="pinf c">
+										<div class="pinf-l c">
+											<p class="ico">
+												<i><img src="images/ico_8_1.png" alt=""></i>
+												<i><img src="images/ico_8_1.png" alt=""></i>
+												<i><img src="images/ico_8_1.png" alt=""></i>
+												<i><img src="images/ico_8_1.png" alt=""></i>
+												<i><img src="images/ico_8_2.png" alt=""></i>
+											</p>
+											<p class="fen">4.8 <em>分</em></p>
+										</div>
+										<div class="r-city">
+											<i><img src="images/ico_4.png" alt=""></i>
+											<span>菲律宾 / 宿务</span>
+										</div>
+									</div>
+									<div class="lable c">
+										<i>商用课程</i>
+										<i>斯巴达课程</i>
+										<i>一对一指导</i>
+										<i>雅思</i>
+										<i>秘籍斯巴达课程</i>
+										<i>商务英语</i>
+										<i>一般英语</i>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+		<!-- 公共底部 -->
+		<div class="m-footer">
+			<div class="m-footer-main c">
+				<div class="m-footer-l">
+					<div class="top-logo"><a href="index.html"><img src="images/logo_1.png" alt=""></a></div>
+					<div class="public-ico">
+						<p class="ico"><img src="images/public_ico.png" alt=""></p>
+						<p class="text">扫码关注菲岛游学</p>
+					</div>
+				</div>
+				<div class="m-footer-r">
+					<div class="top-title"><span>CONTACT US .</span><em>联系我们</em></div>
+					<div class="friendshipLink">
+						<div class="link-main c">
+							<div class="link-l">访问链接：</div>
+							<div class="link-nav">
+								<a href="index.html"><span>首页</span><i>/</i></a>
+								<a href=""><span>学校大全</span><i>/</i></a>
+								<a href=""><span>宿务名校</span><i>/</i></a>
+								<a href=""><span>游学资讯</span><i>/</i></a>
+								<a href=""><span>学生反馈</span><i>/</i></a>
+								<a href=""><span>咨询我们</span><i></i></a>
+							</div>
+						</div>
+						<div class="link-main c">
+							<div class="link-l">课程选择：</div>
+							<div class="link-nav">
+								<a href="javascript:void(0)"><span>TOEFL</span><i>/</i></a>
+								<a href="javascript:void(0)"><span>TOEIC</span><i>/</i></a>
+								<a href="javascript:void(0)"><span>ESL</span><i>/</i></a>
+								<a href="javascript:void(0)"><span>Sparta Es</span><i>/</i></a>
+								<a href="javascript:void(0)"><span>PMC</span><i>/</i></a>
+								<a href="javascript:void(0)"><span>Business English</span><i></i></a>
+							</div>
+						</div>
+						<div class="xiang-foot"></div>
+					</div>
+					<div class="footer-form">
+						<form action="" class="submit-area">
+							<input type="hidden" name="source" value="6">
+							<input type="hidden" name="equipment" value="2">
+							<div class="form-cent c">
+								<div class="form-cent-l">
+									<p class="top-m">
+										<input type="text" name="name" placeholder="姓名:">
+										<input type="text" name="intention-course" placeholder="课程:">
+									</p>
+									<p class="bot">
+										<input type="text" name="mobile" placeholder="手机号:">
+									</p>
+								</div>
+								<div class="form-cent-r">
+									<textarea rows="6" name="message" placeholder="留言:"></textarea>
+								</div>
+							</div>
+							<div class="form-bottom">
+								<a href="javascript:void(0)" class="apply-submit">确认提交</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+</body>
+</html>

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>宿务名校</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/public.js"></script>
+	<script src="js/swiper-3.4.2.min.js"></script>
+	<script src="js/echarts.min.js"></script>
+	<link rel="stylesheet" href="layui/css/layui.css">
+	<script src="layui/layui.js"></script>
+	<script type="text/javascript" src="js/prefixfree.min.js"></script>
+	<script type="text/javascript" src="js/zoom-slideshow.js"></script>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+</head>
+<body>
+	<!-- 公共顶部  A-->
+	<div class="m-header">
+	    <div class="header-main c">
+	        <div class="header-main-left fl">
+	            <div class="shou-d f14">
+	                <i><img src="images/ico_1.png" alt=""></i>
+	                <span>关注公众号</span>
+	            </div>
+	            <div class="hide-e">
+	                <div class="hide-e-main f14">
+	                    <i><img src="images/ico_34.png" alt=""></i>
+	                    <p>
+	                        <img src="images/public_ico.png" alt="">
+	                    </p>
+	                    <span>扫码关注公众号</span>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="header-main-right fr f14">
+	            <i><img src="images/ico_2.png" alt=""></i>
+	            <span>咨询热线：400-8836-133</span>
+	        </div>
+	    </div>
+	</div>
+	<!-- 二级头部导航 -->
+	<div class="m-navigationbox">
+		<div class="m-navigation c">
+			<a href="index.html" target="_blank" class="logo"><img src="images/logo.png" alt=""></a>
+			<div class="ul c">
+				<a href="index.html" target="_blank"><i></i><p>首页</p></a>
+				<a href="list.html" target="_blank"><i></i><p>精选学校</p></a>
+				<a href="cebu.html" target="_blank" class="on"><i></i><p>宿务名校</p></a>
+				<a href="yxlist.html" target="_blank"><i></i><p>游学资讯</p></a>
+				<a href="consultation.html" target="_blank"><i></i><p>学生反馈</p></a>
+				<a href="consultation.html" target="_blank"><i></i><p>咨询我们</p></a>
+			</div>
+		</div>
+	</div>
+	<!-- 筛选条件 -->
+	<div class="screenbox">
+		<div class="screen c">
+			<div class="screen-l">
+				<em>筛选条件：</em>
+				<div class="dropdownbox c">
+					<div class="dropdown">
+						<div class="dropdown-text c"><span style="width: 105px;">选择游学城市</span><img src="images/list1.png" alt=""></div>
+						<div class="dropdown-l on">
+							<span name="city" value="0">不限</span>
+							<span name="city" value="167">宿务</span>
+							<span name="city" value="169">马尼拉</span>
+							<span name="city" value="168">克拉克</span>
+							<span name="city" value="170">碧瑶</span>
+						</div>
+					</div>
+					<img src="images/list7.png" alt="" class="mxt">
+					<!-- 课程选择 -->
+					<div class="dropdown" style="width: 200px;">
+						<div class="dropdown-text c" name="curriculum"><span>选择课程</span><img src="images/list1.png" alt=""></div>
+						<div class="dropdown-l" name="curriculum">
+							<span name="curriculum" value="0">不限</span>
+							<span name="curriculum" value="109">商务英语</span>
+							<span name="curriculum" value="108">斯巴达课程</span>
+							<span name="curriculum" value="107">斯巴达英语</span>
+							<span name="curriculum" value="106">一般英语</span>
+							<span name="curriculum" value="105">多益</span>
+							<span name="curriculum" value="104">托福</span>
+							<span name="curriculum" value="100">英语演讲</span>
+							<span name="curriculum" value="99">雅思</span>
+						</div>
+					</div>
+					<img src="images/list7.png" alt="" class="mxt">
+					<!-- 选择特色课程 -->
+					<div class="dropdown" style="width: 200px;">
+						<div class="dropdown-text c">
+							<span>特色课程</span><img src="images/list1.png" alt="">
+						</div>
+						<div class="dropdown-l" name="characteristic">
+							<span name="characteristic" value="0">不限</span>
+							<span name="characteristic" value="114">商用课程</span>
+							<span name="characteristic" value="113">口语课程</span>
+							<span name="characteristic" value="112">夏令营/冬令营</span>
+							<span name="characteristic" value="111">秘籍斯巴达课程</span>
+							<span name="characteristic" value="110">亲子团队</span>
+							<span name="characteristic" value="101">一对一指导</span>
+						</div>
+					</div>
+					<p class="confirm">确定</p>
+				</div>
+			</div>
+			<div class="screen-r c">
+				<img src="images/list2.png" alt="">
+				<input type="text" placeholder="请输入要搜索的关键词">
+				<p>搜索</p>
+			</div>
+		</div>
+	</div>
+	<!-- 学校列表 -->
+	<div class="listbox c">
+		<div class="list-l">
+			<div class="list c">
+				<a href="javascript:void(0)">
+					<div class="listimg"><img src="images/a.jpg" alt=""></div>
+					<div class="listtext">
+						<p class="title c">
+							<em>CPILS-Cebu Pacific International Language School</em>
+							<span><i>9800</i> 元/月</span>
+						</p>
+						<div class="scorebox c">
+							<div class="mscore c">
+								<p class="xingon c">
+									<i><img src="images/xx1.png" alt=""></i>
+									<i><img src="images/xx1.png" alt=""></i>
+									<i><img src="images/xx1.png" alt=""></i>
+									<i><img src="images/xx1.png" alt=""></i>
+									<i><img src="images/xx01.png" alt=""></i>
+								</p>
+								<span><i>4.8</i> 分</span>
+							</div>
+							<div class="address"><img src="images/dz.png" alt=""> 菲律宾/宿务</div>
+							<p class="text">
+								<span>学校简介：</span>
+								 CPILS成立于2001年，是宿雾第一家语言学校，是菲律最大的 ESL 学校之一，师资团队从招聘到培训和后期进修，有自己一套的流程，优秀的老师们加上良好的管理系统使CPILS保持良好的声誉。CPILS是宿雾TESDA教育机构正式注册登记合格会员，也是第一个由TOEIC官方授权的TOEIC考试中心，所提供的课程都是以最高标准为学生能达到优秀和才华而设计的。
+							</p>
+							<div class="type c">
+								<span>秘籍斯巴达课程</span>
+								<span>一对一指导</span>
+								<span>斯巴达英语</span>
+								<span>一般英语</span>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="list c">
+				<a href="javascript:void(0)">
+					<div class="listimg"><img src="images/b.jpg" alt=""></div>
+					<div class="listtext">
+						<p class="title c">
+							<em>CPILS-Cebu Pacific International Language School</em>
+							<span><i>9800</i> 元/月</span>
+						</p>
+						<div class="scorebox c">
+							<div class="mscore c">
+								<p class="xingon c">
+									<i><img src="images/xx1.png" alt=""></i>
+									<i><img src="images/xx1.png" alt=""></i>
+									<i><img src="images/xx1.png" alt=""></i>
+									<i><img src="images/xx1.png" alt=""></i>
+									<i><img src="images/xx01.png" alt=""></i>
+								</p>
+								<span><i>4.8</i> 分</span>
+							</div>
+							<div class="address"><img src="images/dz.png" alt=""> 菲律宾/宿务</div>
+							<p class="text">
+								<span>学校简介：</span>
+								 CPILS成立于2001年，是宿雾第一家语言学校，是菲律最大的 ESL 学校之一，师资团队从招聘到培训和后期进修，有自己一套的流程，优秀的老师们加上良好的管理系统使CPILS保持良好的声誉。CPILS是宿雾TESDA教育机构正式注册登记合格会员，也是第一个由TOEIC官方授权的TOEIC考试中心，所提供的课程都是以最高标准为学生能达到优秀和才华而设计的。
+							</p>
+							<div class="type c">
+								<span>秘籍斯巴达课程</span>
+								<span>一对一指导</span>
+								<span>斯巴达英语</span>
+								<span>一般英语</span>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="list c">
+				<a href="javascript:void(0)">
+					<div class="listimg"><img src="images/a.jpg" alt=""></div>
+					<div class="listtext">
+						<p class="title c">
+							<em>CPILS-Cebu Pacific International Language School</em>
+							<span><i>9800</i> 元/月</span>
+						</p>
+						<div class="scorebox c">
+							<div class="mscore c">
+								<p class="xingon c">
+									<i><img src="images/xx1.png" alt=""></i>
+									<i><img src="images/xx1.png" alt=""></i>
+									<i><img src="images/xx1.png" alt=""></i>
+									<i><img src="images/xx1.png" alt=""></i>
+									<i><img src="images/xx01.png" alt=""></i>
+								</p>
+								<span><i>4.8</i> 分</span>
+							</div>
+							<div class="address"><img src="images/dz.png" alt=""> 菲律宾/宿务</div>
+							<p class="text">
+								<span>学校简介：</span>
+								 CPILS成立于2001年，是宿雾第一家语言学校，是菲律最大的 ESL 学校之一，师资团队从招聘到培训和后期进修，有自己一套的流程，优秀的老师们加上良好的管理系统使CPILS保持良好的声誉。CPILS是宿雾TESDA教育机构正式注册登记合格会员，也是第一个由TOEIC官方授权的TOEIC考试中心，所提供的课程都是以最高标准为学生能达到优秀和才华而设计的。
+							</p>
+							<div class="type c">
+								<span>秘籍斯巴达课程</span>
+								<span>一对一指导</span>
+								<span>斯巴达英语</span>
+								<span>一般英语</span>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="list c">
+				<a href="javascript:void(0)">
+					<div class="listimg"><img src="images/b.jpg" alt=""></div>
+					<div class="listtext">
+						<p class="title c">
+							<em>CPILS-Cebu Pacific International Language School</em>
+							<span><i>9800</i> 元/月</span>
+						</p>
+						<div class="scorebox c">
+							<div class="mscore c">
+								<p class="xingon c">
+									<i><img src="images/xx1.png" alt=""></i>
+									<i><img src="images/xx1.png" alt=""></i>
+									<i><img src="images/xx1.png" alt=""></i>
+									<i><img src="images/xx1.png" alt=""></i>
+									<i><img src="images/xx01.png" alt=""></i>
+								</p>
+								<span><i>4.8</i> 分</span>
+							</div>
+							<div class="address"><img src="images/dz.png" alt=""> 菲律宾/宿务</div>
+							<p class="text">
+								<span>学校简介：</span>
+								 CPILS成立于2001年，是宿雾第一家语言学校，是菲律最大的 ESL 学校之一，师资团队从招聘到培训和后期进修，有自己一套的流程，优秀的老师们加上良好的管理系统使CPILS保持良好的声誉。CPILS是宿雾TESDA教育机构正式注册登记合格会员，也是第一个由TOEIC官方授权的TOEIC考试中心，所提供的课程都是以最高标准为学生能达到优秀和才华而设计的。
+							</p>
+							<div class="type c">
+								<span>秘籍斯巴达课程</span>
+								<span>一对一指导</span>
+								<span>斯巴达英语</span>
+								<span>一般英语</span>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="list c">
+				<a href="javascript:void(0)">
+					<div class="listimg"><img src="images/f.jpg" alt=""></div>
+					<div class="listtext">
+						<p class="title c">
+							<em>CPILS-Cebu Pacific International Language School</em>
+							<span><i>9800</i> 元/月</span>
+						</p>
+						<div class="scorebox c">
+							<div class="mscore c">
+								<p class="xingon c">
+									<i><img src="images/xx1.png" alt=""></i>
+									<i><img src="images/xx1.png" alt=""></i>
+									<i><img src="images/xx1.png" alt=""></i>
+									<i><img src="images/xx1.png" alt=""></i>
+									<i><img src="images/xx01.png" alt=""></i>
+								</p>
+								<span><i>4.8</i> 分</span>
+							</div>
+							<div class="address"><img src="images/dz.png" alt=""> 菲律宾/宿务</div>
+							<p class="text">
+								<span>学校简介：</span>
+								 CPILS成立于2001年，是宿雾第一家语言学校，是菲律最大的 ESL 学校之一，师资团队从招聘到培训和后期进修，有自己一套的流程，优秀的老师们加上良好的管理系统使CPILS保持良好的声誉。CPILS是宿雾TESDA教育机构正式注册登记合格会员，也是第一个由TOEIC官方授权的TOEIC考试中心，所提供的课程都是以最高标准为学生能达到优秀和才华而设计的。
+							</p>
+							<div class="type c">
+								<span>秘籍斯巴达课程</span>
+								<span>一对一指导</span>
+								<span>斯巴达英语</span>
+								<span>一般英语</span>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="list c">
+				<a href="javascript:void(0)">
+					<div class="listimg"><img src="images/e.jpg" alt=""></div>
+					<div class="listtext">
+						<p class="title c">
+							<em>CPILS-Cebu Pacific International Language School</em>
+							<span><i>9800</i> 元/月</span>
+						</p>
+						<div class="scorebox c">
+							<div class="mscore c">
+								<p class="xingon c">
+									<i><img src="images/xx1.png" alt=""></i>
+									<i><img src="images/xx1.png" alt=""></i>
+									<i><img src="images/xx1.png" alt=""></i>
+									<i><img src="images/xx1.png" alt=""></i>
+									<i><img src="images/xx01.png" alt=""></i>
+								</p>
+								<span><i>4.8</i> 分</span>
+							</div>
+							<div class="address"><img src="images/dz.png" alt=""> 菲律宾/宿务</div>
+							<p class="text">
+								<span>学校简介：</span>
+								 CPILS成立于2001年，是宿雾第一家语言学校，是菲律最大的 ESL 学校之一，师资团队从招聘到培训和后期进修，有自己一套的流程，优秀的老师们加上良好的管理系统使CPILS保持良好的声誉。CPILS是宿雾TESDA教育机构正式注册登记合格会员，也是第一个由TOEIC官方授权的TOEIC考试中心，所提供的课程都是以最高标准为学生能达到优秀和才华而设计的。
+							</p>
+							<div class="type c">
+								<span>秘籍斯巴达课程</span>
+								<span>一对一指导</span>
+								<span>斯巴达英语</span>
+								<span>一般英语</span>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="list c">
+				<a href="javascript:void(0)">
+					<div class="listimg"><img src="images/a.jpg" alt=""></div>
+					<div class="listtext">
+						<p class="title c">
+							<em>CPILS-Cebu Pacific International Language School</em>
+							<span><i>9800</i> 元/月</span>
+						</p>
+						<div class="scorebox c">
+							<div class="mscore c">
+								<p class="xingon c">
+									<i><img src="images/xx1.png" alt=""></i>
+									<i><img src="images/xx1.png" alt=""></i>
+									<i><img src="images/xx1.png" alt=""></i>
+									<i><img src="images/xx1.png" alt=""></i>
+									<i><img src="images/xx01.png" alt=""></i>
+								</p>
+								<span><i>4.8</i> 分</span>
+							</div>
+							<div class="address"><img src="images/dz.png" alt=""> 菲律宾/宿务</div>
+							<p class="text">
+								<span>学校简介：</span>
+								 CPILS成立于2001年，是宿雾第一家语言学校，是菲律最大的 ESL 学校之一，师资团队从招聘到培训和后期进修，有自己一套的流程，优秀的老师们加上良好的管理系统使CPILS保持良好的声誉。CPILS是宿雾TESDA教育机构正式注册登记合格会员，也是第一个由TOEIC官方授权的TOEIC考试中心，所提供的课程都是以最高标准为学生能达到优秀和才华而设计的。
+							</p>
+							<div class="type c">
+								<span>秘籍斯巴达课程</span>
+								<span>一对一指导</span>
+								<span>斯巴达英语</span>
+								<span>一般英语</span>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="list c">
+				<a href="javascript:void(0)">
+					<div class="listimg"><img src="images/b.jpg" alt=""></div>
+					<div class="listtext">
+						<p class="title c">
+							<em>CPILS-Cebu Pacific International Language School</em>
+							<span><i>9800</i> 元/月</span>
+						</p>
+						<div class="scorebox c">
+							<div class="mscore c">
+								<p class="xingon c">
+									<i><img src="images/xx1.png" alt=""></i>
+									<i><img src="images/xx1.png" alt=""></i>
+									<i><img src="images/xx1.png" alt=""></i>
+									<i><img src="images/xx1.png" alt=""></i>
+									<i><img src="images/xx01.png" alt=""></i>
+								</p>
+								<span><i>4.8</i> 分</span>
+							</div>
+							<div class="address"><img src="images/dz.png" alt=""> 菲律宾/宿务</div>
+							<p class="text">
+								<span>学校简介：</span>
+								 CPILS成立于2001年，是宿雾第一家语言学校，是菲律最大的 ESL 学校之一，师资团队从招聘到培训和后期进修，有自己一套的流程，优秀的老师们加上良好的管理系统使CPILS保持良好的声誉。CPILS是宿雾TESDA教育机构正式注册登记合格会员，也是第一个由TOEIC官方授权的TOEIC考试中心，所提供的课程都是以最高标准为学生能达到优秀和才华而设计的。
+							</p>
+							<div class="type c">
+								<span>秘籍斯巴达课程</span>
+								<span>一对一指导</span>
+								<span>斯巴达英语</span>
+								<span>一般英语</span>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			
+			
+		</div>
+		<div class="list-r">
+			<div class="list-xg">
+				<div class="xsignup">
+					<img src="images/tbg.png" alt="">
+					<form class="submit">
+						<div class="m-bm-input">
+							<input type="text" name="mobile" onfocus="this.placeholder=''" onblur="this.placeholder='请输入您的手机号'" placeholder="请输入您的手机号">
+							<p class=" apply-submit">立即获取</p>
+						</div>
+					</form>
+				</div>
+				<div customized dzclick><img src="images/list4.png" alt=""></div>
+			</div>
+			
+		</div>
+	</div>
+		<!-- 公共底部 -->
+		<div class="m-footer">
+			<div class="m-footer-main c">
+				<div class="m-footer-l">
+					<div class="top-logo"><a href="index.html"><img src="images/logo_1.png" alt=""></a></div>
+					<div class="public-ico">
+						<p class="ico"><img src="images/public_ico.png" alt=""></p>
+						<p class="text">扫码关注菲岛游学</p>
+					</div>
+				</div>
+				<div class="m-footer-r">
+					<div class="top-title"><span>CONTACT US .</span><em>联系我们</em></div>
+					<div class="friendshipLink">
+						<div class="link-main c">
+							<div class="link-l">访问链接：</div>
+							<div class="link-nav">
+								<a href="index.html"><span>首页</span><i>/</i></a>
+								<a href=""><span>学校大全</span><i>/</i></a>
+								<a href=""><span>宿务名校</span><i>/</i></a>
+								<a href=""><span>游学资讯</span><i>/</i></a>
+								<a href=""><span>学生反馈</span><i>/</i></a>
+								<a href=""><span>咨询我们</span><i></i></a>
+							</div>
+						</div>
+						<div class="link-main c">
+							<div class="link-l">课程选择：</div>
+							<div class="link-nav">
+								<a href="javascript:void(0)"><span>TOEFL</span><i>/</i></a>
+								<a href="javascript:void(0)"><span>TOEIC</span><i>/</i></a>
+								<a href="javascript:void(0)"><span>ESL</span><i>/</i></a>
+								<a href="javascript:void(0)"><span>Sparta Es</span><i>/</i></a>
+								<a href="javascript:void(0)"><span>PMC</span><i>/</i></a>
+								<a href="javascript:void(0)"><span>Business English</span><i></i></a>
+							</div>
+						</div>
+						<div class="xiang-foot"></div>
+					</div>
+					<div class="footer-form">
+						<form action="" class="submit-area">
+							<input type="hidden" name="source" value="6">
+							<input type="hidden" name="equipment" value="2">
+							<div class="form-cent c">
+								<div class="form-cent-l">
+									<p class="top-m">
+										<input type="text" name="name" placeholder="姓名:">
+										<input type="text" name="intention-course" placeholder="课程:">
+									</p>
+									<p class="bot">
+										<input type="text" name="mobile" placeholder="手机号:">
+									</p>
+								</div>
+								<div class="form-cent-r">
+									<textarea rows="6" name="message" placeholder="留言:"></textarea>
+								</div>
+							</div>
+							<div class="form-bottom">
+								<a href="javascript:void(0)" class="apply-submit">确认提交</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+</body>
+</html>
